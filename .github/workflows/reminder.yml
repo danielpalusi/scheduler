@@ -23,5 +23,5 @@ jobs:
 
       - name: Run Reminder Script
         env:
-          GOOGLE_CHAT_WEBHOOK_URL: ${{ secrets.GOOGLE_CHAT_WEBHOOK_URL }}
+          GOOGLE_CHAT_WEBHOOK_URL: ${{ secrets.CHAT_WEBHOOK_URL }}
         run: node send_reminder.js
