@@ -2,10 +2,9 @@ name: Send Google Chat Checkout Reminder
 
 on:
   schedule:
-    # 17:30 WIB (UTC+7) = 10:30 UTC (17:30 minus 7 hours)
-    # Runs Monday through Friday
+    # Minute: 30, Hour: 10 UTC (10:30 UTC = 17:30 WIB / UTC+7)
     - cron: '30 10 * * 1-5'
-  
+
   # Allows manual triggering anytime from the Actions tab
   workflow_dispatch: 
 
